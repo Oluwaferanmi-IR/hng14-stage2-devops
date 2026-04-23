@@ -80,4 +80,3 @@ def test_get_existing_job_returns_status(mock_redis):
     assert "job_id" in data
     assert "status" in data
     assert data["status"] == "queued"
-
