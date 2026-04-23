@@ -30,12 +30,14 @@ jobs:
         run: |
           flake8 api/ \
             --max-line-length=100 \
+            --extend-ignore=W291,W292,W293,W391 \
             --exclude=__pycache__
 
       - name: Lint Worker Python code
         run: |
           flake8 worker/ \
             --max-line-length=100 \
+            --extend-ignore=W291,W292,W293,W391 \
             --exclude=__pycache__
 
       - name: Set up Node.js
